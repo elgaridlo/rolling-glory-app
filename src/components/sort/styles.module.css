@@ -1,0 +1,39 @@
+.sort__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.9rem;
+  }
+  
+  @media (min-width: 576px) {
+    .sort__container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.9rem;
+    }
+  }
+  
+  .sort__container > span {
+    font-size: var(--font-size-12);
+    line-height: 20px;
+  }
+  
+  .sort__container > select {
+    width: 15rem;
+    height: 2.5rem;
+  
+    font-size: var(--font-size-12);
+    line-height: var(--line-spacing-14);
+    text-align: center;
+  
+    border: 1px solid #9d9d9d;
+    border-radius: 33px;
+  
+    padding-top: 0.7rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+  }
+    

@@ -254,3 +254,17 @@ img {
   letter-spacing: var(--character-spacing-0);
   color: var(--font-color-6);
 }
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right:  0rem !important;
+  padding-left:  0rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}

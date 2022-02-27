@@ -1,0 +1,221 @@
+.product__card {
+    position: relative;
+    display: grid;
+    min-height: 450px;
+    max-height: 450px;
+    word-break: break-all;
+    line-break: auto;
+  
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+    padding-top: 1.531rem;
+  }
+  
+  @media (min-width: 1200px) {
+    .product__card {
+      min-width: 250px;
+    }
+  }
+  
+  .card__body {
+    flex: 1 1 auto;
+    padding: 1.875rem 1.25rem 1.875rem 1.25rem;
+  }
+  
+  .product__name {
+    min-height: 39px;
+  }
+  
+  .product__description,
+  .product__misc {
+    display: flex;
+  }
+  
+  .product__description {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  
+  .product__misc {
+    flex: 1 1 auto;
+    flex-direction: column;
+  
+    display: flex;
+    gap: 6.7px;
+  }
+  
+  .product__points {
+    display: flex;
+    gap: 0.517rem;
+  }
+  
+  .product__points > span {
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-normal);
+    color: var(--font-color-2);
+    line-height: var(--line-spacing-16);
+  }
+  
+  .product__tooltips {
+    display: flex;
+    align-items: center;
+    gap: 6.52px;
+  }
+  
+  .product__reviews {
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-normal);
+    color: var(--font-color-6);
+    line-height: 20px;
+  }
+  
+  .product__wishlist {
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product__stock {
+    margin-left: 2.165rem;
+    margin-right: 2.165rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .product__description * {
+    user-select: none;
+  }
+  
+  .product__card.is__sold_out {
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .product__card:not(.is__sold_out):hover::after,
+  .product__card:not(.is__sold_out):hover .overlay__items {
+    opacity: 95%;
+  }
+  .product__card:not(.is__sold_out):hover .product__stock,
+  .product__card:not(.is__sold_out):hover .overlay__items {
+    z-index: 1;
+  }
+  
+  .product__card:not(.is__sold_out):hover .product__wishlist {
+    z-index: 2;
+  }
+  
+  .product__card:not(.is__sold_out):hover .product__stock {
+    color: #fff;
+    transition: none;
+  }
+  
+  .product__card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #74b71b, #649c1a);
+    opacity: 0;
+    z-index: 0;
+    box-shadow: 0px 3px 6px #00000012;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .product__card.is__sold_out::after {
+    background: #e1e8ee;
+    opacity: 73%;
+  }
+  
+  .overlay__items {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* opacity: 0; */
+    /* z-index: 2; */
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+  
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+  
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  
+  .overlay__items > span {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  
+    /* color: #fff; */
+  
+    margin-top: 10.625rem;
+    margin-bottom: 3.875rem;
+  }
+  
+  .overlay__items > a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .overlay__items:hover {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .product__image {
+    position: relative;
+    display: block;
+    min-height: 230px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  
+    margin: 0;
+    padding: 0 1.25rem;
+  }
+  
+  @media (min-width: 1280px) {
+    .product__image {
+      min-height: 265px;
+    }
+  }
+  
+  .image__box,
+  .image__box img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+  }
+  
+  .image__box {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .image__box img {
+    pointer-events: none;
+  }
+
+  
+  

@@ -1,0 +1,14 @@
+.product__stock_label {
+    font-family: var(--font-family-raleway);
+    font-weight: var(--font-weight-600);
+    font-size: var(--font-size-12);
+  
+    user-select: none;
+  }
+  
+  .stock__green {
+    color: #79b625;
+  }
+  .stock__red {
+    color: #e64580;
+  }

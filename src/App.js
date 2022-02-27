@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import ProductScreen from './screen/productScreen/ProductScreen';
 import Header from './layout/Header';
 import Footer from './layout/Footer/Footer';
+import ProductInfo from './screen/productInfo/ProductInfo';
 
 function App() {
   return (
@@ -26,7 +27,11 @@ function App() {
       </header> */}
         <main>
           <Switch>
+            <Route exact path="/" render={() => (
+              <Redirect to="/product" />
+            )} />
             <Route path="/product" component={ProductScreen} exact />
+            <Route path="/product/:id" component={ProductInfo} exact />
           </Switch>
         </main>
         <Footer />
