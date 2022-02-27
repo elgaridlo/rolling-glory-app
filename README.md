@@ -73,6 +73,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Because I'm more familiar using Reactjs then other framework today. And in this reactjs we have redux so its more easy to play around with it. 
 
-### The Challange
+### Why React Bootstrap
+
+React-Bootstrap yeah it has bootsrap in it. So it documented well no doubt about it haha and easy to use sometimes. And hard to custome sometimes
+
+### The Challanges
 
 Yeah actually I did'nt finish all the challange, and my knowledge about css is still not good. It makes me realize when I do this challange haha because in the IT Consultant we have to make the timeline short and we have to deliver fast. So we bought template haha. But Thank you Rolling Glory for the challange and I need to learn more about css.
